@@ -11,13 +11,14 @@ const App = () => {
     try {
       const response = await fetch(url);
       const tours = await response.json()
+      console.log(tours);
     } catch (error) {
-      
+      console.log(error);
     }
   }
 
   useEffect(() =>{
-
+fetchTours()
   },[])
 
   return <h2>Tours Starter</h2>;
